@@ -28,17 +28,17 @@
                 fx:id="board"
                 alignment="CENTER">
 
-            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="0" GridPane.rowIndex="0" onAction="#place"/>
-            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="1" GridPane.rowIndex="0" onAction="#place"/>
-            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="2" GridPane.rowIndex="0" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" style="-fx-font-size: 48px;" GridPane.columnIndex="0" GridPane.rowIndex="0" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" style="-fx-font-size: 48px;" GridPane.columnIndex="1" GridPane.rowIndex="0" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" style="-fx-font-size: 48px;" GridPane.columnIndex="2" GridPane.rowIndex="0" onAction="#place"/>
 
-            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="0" GridPane.rowIndex="1" onAction="#place"/>
-            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#place"/>
-            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" style="-fx-font-size: 48px;" GridPane.columnIndex="0" GridPane.rowIndex="1" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" style="-fx-font-size: 48px;" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" style="-fx-font-size: 48px;" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#place"/>
 
-            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#place"/>
-            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#place"/>
-            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" style="-fx-font-size: 48px;" GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" style="-fx-font-size: 48px;" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" style="-fx-font-size: 48px;" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#place"/>
             <columnConstraints>
                 <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33"/>
                 <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33"/>
