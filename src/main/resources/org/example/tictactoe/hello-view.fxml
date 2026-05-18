@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tictactoe.Game">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="newGameButton" mnemonicParsing="false" prefHeight="25.0" text="Új játék" onAction="#startNewGame"/>
+                <Button fx:id="teachButton" mnemonicParsing="false" prefHeight="25.0" text="Öntanítás" onAction="#selfTeach" disable="true"/>
+                <Button fx:id="deleteMemory" mnemonicParsing="false" prefHeight="25.0" text="MI memória törlése" onAction="#deleteMemory"/>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MI tudása:" textAlignment="RIGHT"/>
+                <ProgressBar fx:id="progressBar" prefHeight="25.0" prefWidth="200" progress="0.0"/>
+                <Text fx:id="percentText" strokeType="OUTSIDE" strokeWidth="0.0" text="0% (0 kombináció)"/>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <GridPane
+                fx:id="board"
+                alignment="CENTER">
+
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="0" GridPane.rowIndex="0" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="1" GridPane.rowIndex="0" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="2" GridPane.rowIndex="0" onAction="#place"/>
+
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="0" GridPane.rowIndex="1" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#place"/>
+
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#place"/>
+            <Button maxHeight="Infinity" maxWidth="Infinity" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#place"/>
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33"/>
+                <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33"/>
+                <ColumnConstraints hgrow="ALWAYS" percentWidth="33.33"/>
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints vgrow="ALWAYS" percentHeight="33.33"/>
+                <RowConstraints vgrow="ALWAYS" percentHeight="33.33"/>
+                <RowConstraints vgrow="ALWAYS" percentHeight="33.33"/>
+            </rowConstraints>
+        </GridPane>
+    </center>
+</BorderPane>
