@@ -18,6 +18,10 @@ public class Move {
         this.col = col;
     }
 
+    public Move() {
+        // kell Jacksonnak
+    }
+
     /**
      * @return a sor indexe
      */

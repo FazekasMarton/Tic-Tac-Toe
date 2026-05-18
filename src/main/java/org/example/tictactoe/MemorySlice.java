@@ -7,6 +7,10 @@ public class MemorySlice {
     private Move move;
     private ArrayList<MemorySlice> nextMoves = new ArrayList<>();
 
+    public MemorySlice() {
+        // kell Jacksonnak
+    }
+
     /**
      * @param move az aktuális lépés
      */
